@@ -35,7 +35,7 @@ var pages = [
     new Page(1600, 800, "ie", "te", "https://energyhq.com/2018/08/the-oerb-committed-to-restoration-education-since-1993/"),
     new Page(1920, 1188, "if", "tf", "https://www.oerb.com/well-site-clean-up"),
     new Page(1280, 720, "ig", "tg", ""),
-    new Page(1, 1, "ih", "th", ""),
+    new Page(1, 1, "ii", "ti", ""),
 ];
 
 function calcMultiplier(ow, oh, w, h) {
