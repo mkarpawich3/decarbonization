@@ -1,0 +1,107 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    background-color: #eee;
+}
+
+#scroll {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.cell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    overflow: hidden;
+}
+
+#book {
+    width: 100%;
+}
+
+.page {
+    width: calc(50% - 2px);
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    border: 1px solid gray;
+}
+
+#left {
+    background-color: black;
+}
+
+#right {
+    background-color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#controls {
+    position: absolute;
+    bottom: 0;
+    width: 400px;
+    height: 60px;
+    background-color: #e5e5e5;
+    border: 1px solid #777;
+    margin-left: calc(50% - 200px);
+}
+
+#controls .control {
+    position: relative;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+#controls #forward {
+    float: right;
+    right: 10px;
+}
+
+#controls #backward {
+    float: left;
+    left: 10px;
+}
+
+#controls #count {
+    top: 15px;
+    margin-left: 180px;
+    margin-right: 180px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+.img {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.txt {
+    font-family: 'McLaren';
+    display: none;
+}
+
+.block {
+    display: block;
+    max-width: 700px;
+    padding: 30px;
+    font-size: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
