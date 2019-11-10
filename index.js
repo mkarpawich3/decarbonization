@@ -47,7 +47,7 @@ function calcMultiplier(ow, oh, w, h) {
 }
 
 function resizeBook(ow, oh) {
-    book.style.height = (window.innerWidth/8)*3 + "px";
+    // book.style.height = (window.innerWidth/8)*3 + "px";
     var page = pages[pageIndex - 1];
     var multiplier = calcMultiplier(ow, oh, page.imageWidth, page.imageHeight);
     activeImage.style.width = (page.imageWidth * multiplier) + "px";
