@@ -2,106 +2,130 @@ body, html {
     width: 100%;
     height: 100%;
     margin: 0px;
-    background-color: #eee;
 }
 
-#scroll {
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
+body {
+    background-color: #fff2a3;
 }
 
 .table {
     display: table;
     width: 100%;
     height: 100%;
-    overflow: hidden;
 }
 
 .cell {
     display: table-cell;
     vertical-align: middle;
     width: 100%;
-    overflow: hidden;
 }
 
-#book {
-    width: 100%;
+#content {
+    float: none;
 }
 
-.page {
-    width: calc(50% - 2px);
-    height: 100%;
-    float: left;
-    overflow: hidden;
-    border: 1px solid gray;
-}
-
-#left {
-    background-color: black;
-}
-
-#right {
-    background-color: white;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
-#controls {
-    position: absolute;
-    bottom: 0;
-    width: 400px;
-    height: 60px;
-    background-color: #e5e5e5;
-    border: 1px solid #777;
-    margin-left: calc(50% - 200px);
-}
-
-#controls .control {
-    position: relative;
-    top: 10px;
-    width: 40px;
-    height: 40px;
-}
-
-#controls #forward {
-    float: right;
-    right: 10px;
-}
-
-#controls #backward {
-    float: left;
-    left: 10px;
-}
-
-#controls #count {
-    top: 15px;
-    margin-left: 180px;
-    margin-right: 180px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-    color: black;
-    text-align: center;
-}
-
-.img {
-    display: none;
+#chalkboard {
+    width: 800px;
+    height: 450px;
     margin-left: auto;
     margin-right: auto;
+    background-image: url('./img/chalkboard.png');
+    background-size: cover;
+    overflow: hidden;
 }
 
-.txt {
-    font-family: 'McLaren';
+#poster {
+    width: 259.5px;
+    height: 259.5px;
+    margin-left: 83px;
+    margin-top: 83px;
+    float: left;
+}
+
+.p {
+    width: 259.5px;
+    height: 259.5px;
+    margin: 0;
     display: none;
 }
 
-.block {
+#writing {
+    width: 340px;
+    height: 259.5px;
+    margin-left: 45px;
+    margin-top: 83px;
+    float: left;
+    overflow: hidden;
+}
+
+.w {
+    width: 340px;
+    height: 259.5px;
+    margin: 0;
+    color: white;
+    display: none;
+}
+
+#chalkBox {
+    width: 179px;
+    height: 33.3px;
+    margin-left: 311px;
+    margin-top: 391px;
     display: block;
-    max-width: 700px;
-    padding: 30px;
-    font-size: 15px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
+
+.button {
+    width: 33.3px;
+    height: 33.3px;
+    display: block;
+    cursor: pointer;
+}
+
+.button#left {
+    float: left;
+}
+.button#right {
+    float: right;
+}
+
+#toc-title {
+    font-family: 'Fredericka the Great';
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.toc-entry {
+    font-family: 'Fredericka the Great';
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.title {
+    font-family: 'Walter Turncoat';
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.body {
+    font-family: 'Walter Turncoat';
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.larger {
+    font-size: 30px;
+}
+
+.smaller {
+    font-size: 12px;
+}
+
+.medium {
+    font-size: 15px;
+}
+
+tab { padding-left: 4em; }
